@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pedrum Shemirani - Digital Portfolio</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <div class="logo">
+          <a href="#header"><img src="images/graph-5.svg" alt="logo"></a>
+        </div>
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#education" class="smoothScroll">Education</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>Pedrum Shemirani</h1>
+        <h3>Bioinformatics, genomics, data science</h3>
+        <p>PhD student at McMaster University</p>
+        <p><i class="ion-android-locate"> </i> Toronto, Canada.</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="www.linkedin.com/in/pedrum-s"><i class="ion-social-linkedin"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="https://github.com/pedrumstick"><i class="ion-social-github"></i></a></li>
+          <li><a href="mailto:pmohamma@uwo.ca"><i class="ion-email"></i></a></li>
+        </ul>
+        <p>Are you <a href="CV_Pedrum_MohammadiShemirani_2018.pdf" target="_blanks">academia (CV)</a>, or <a href="Resume_Pedrum_MohammadiShemirani_2018.pdf" target="_blanks"> industry (resume)</a>?</p>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/pedrum-profile.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+            <p class="p-heading">I'm a PhD student at McMaster University specializing in bioinformatics and genomics research.</p>
+            <p class="separator">I have several years of experience conducting research projects or developing pipelines in bioinformatics, statistics, and data analysis. My thesis focuses on using genetic and molecular data to improve prediction of cardiometabolic diseases (e.g., heart disease, diabetes, fatty liver disease, etc.) under the supervision of <a href="https://fhs.mcmaster.ca/pathology/contact_us/faculty/faculty_bios/pare.html">Dr. Guillaume Pare</a>.</p>
+            <p>I'm actively looking for learning opportunities in the fields of data science, genomics, and cardiometabolic diseases. <strong>If you're interested in discussing potential collaborations with <a href="#">our lab</a> or have internship opportunities, please <a href="#contact">contact me</a>!</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".genomics">Genomics</li>
+              <li class="filter" data-filter=".predictive">Predictive Analytics</li>
+              <li class="filter" data-filter=".ml">Machine Learning</li>
+              <li class="filter" data-filter=".dataviz">Data Visualization</li>
+              <li class="filter" data-filter=".segmentation">Market Segmentation</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all genomics dataviz">
+              <a class="img-responsive" href="project_reverseMR.html">
+                <img src="images/portfolio/science.png" alt="img">
+                <strong>Mendelian randomization visualization</strong>
+                <p class="descriptor">R Shiny app for visualizing data from Mendelian randomization analyses - a focus of my Master's thesis</p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all predictive dataviz">
+              <a class="popup-img" href="images/portfolio/2.jpg">
+                <img src="images/portfolio/coming-soon.jpg"  alt="img">
+                <strong>NBA predictions</strong>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all segmentation">
+              <a class="popup-img" href="images/portfolio/3.jpg">
+                <img src="images/portfolio/coming-soon.jpg" alt="img">
+                <strong>Telecom customer segmentation and targeting</strong>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all predictive dataviz">
+              <a class="popup-img" href="images/portfolio/4.jpg">
+                <img src="images/portfolio/coming-soon.jpg" alt="img">
+                <strong>Stock market analytics</strong>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all dataviz">
+              <a class="popup-img" href="images/portfolio/5.jpg">
+                <img src="images/portfolio/coming-soon.jpg" alt="img">
+                <strong>FIFA World Cup data exploration</strong>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all">
+              <a class="popup-img" href="images/portfolio/6.jpg">
+                <img src="images/portfolio/coming-soon.jpg" alt="img">
+                <strong>Deep learning instrumental generator</strong>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+  <div id="education" class="text-left paddsection">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Education</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <ul>
+            <li>PhD Candidate in Medical Sciences, McMaster University</li>
+            <li>BSc Clinical Biochemistry, Western University ('15)</li>
+          </ul>
+          <p><strong>Coursework:</strong> Data science; Genetic epidemiology and statistics; Biochemistry of genetic diseases</p>
+          <p>My undergraduate education was rooted in the fundamental concepts of human biochemistry and learning biochemical laboratory techniques (e.g. protein purification, molecular cloning, etc.). In my senior year, I was exposed to the field of genomics through several seminars, and took computer science as an elective. I found these experiences led my interests to gravitate towards bioinformatics rather than traditional laboratory sciences. Therefore, I taught myself more computer programming before staring graduate school. Since then, I successfully transitioned to an interdisciplinary research group with a focus on statistical genetics and data analytics.</p>
+          <p><p>I hope to help usher in the era of precision medicine by identifying causal risk factors, diagnostic markers, and molecular profiles to stratify patients' disease risk.</p></p>
+        </div>
+        <div class="col-lg-4">
+          <div class="skill-item">
+            <div class="progress-title">R</div>
+            <div class="progress">
+              <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" class="progress-bar progress-bar-skill1"><span class="sr-only">80</span></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">Genomics</div>
+            <div class="progress">
+              <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;" class="progress-bar progress-bar-skill2"><span class="sr-only">80</span></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">Machine Learning</div>
+            <div class="progress">
+              <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar progress-bar-skill3"><span class="sr-only">80</span></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">Statistics</div>
+            <div class="progress">
+              <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar progress-bar-skill4"><span class="sr-only">80</span></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="progress-title">Python</div>
+            <div class="progress">
+              <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;" class="progress-bar progress-bar-skill5"><span class="sr-only">80</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">GET IN TOUCH</h2>
+
+              <ul class="contact-details">
+                <li><span>2 Rean Drive</span></li>
+                <li><span>Toronto, Canada</span></li>
+                <li><span>+1 6479913021</span></li>
+                <li><span><a href="mailto@pmohamma@uwo.ca">pmohamma@uwo.ca</a></span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <p>I'm currently based out of Toronto, Canada, but willing to relocate for employment opportunities. I speak fluent English and Farsi, and have a working proficiency in French.</p>
+            <p>If you are a business with Canadian offices, the <a href="https://www.mitacs.ca/en/programs/accelerate#business">Mitacs Accelerate program</a> is an avenue for potential R&D internships. This is an initiative supported by the Canadian government that offers businesses access to graduate students with domain expertise, while giving students opportunities to apply their skills to solve real-life problems facing businesses. Projects run for a minimum of <strong>4 months</strong> and costs are subsidized, so a business would pay <strong>only $7,500</strong> per intern. Longer projects can be supported by a <a href="#">Mitacs Accelerate Fellowship</a> for 18 months. If interested, check out their website or <a href="mailto:pmohamma@uwo.ca"> contact me </a> for more details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="www.linkedin.com/in/pedrum-s"><i class="ion-social-linkedin"></i></a></li>
+          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="https://github.com/pedrumstick"><i class="ion-social-github"></i></a></li>
+          <li><a href="mailto:pmohamma@uwo.ca"><i class="ion-email"></i></a></li>
+        </ul>
+      </div>
+
+      <p>&copy; Copyright Pedrum Mohammadi-Shemirani. All rights reserved.</p>
+
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+  <!---->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+</body>
+
+</html>
