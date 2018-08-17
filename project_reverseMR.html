@@ -11,7 +11,7 @@
   <meta content="" name="description">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans|Roboto" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +33,16 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124104258-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-124104258-1');
+  </script>
 </head>
 
 <body>
@@ -80,6 +90,23 @@
                         <li class="date">date:<a href="#">August 14, 2018</a></li>
                       </ul>
                     </div>
+                    <p>A dashboard for visualizing results of a <a href="#">reverse Mendelian randomization analysis</a> that can be found at <a href="https://pedrum.shinyapps.io/mr_dataviz/">https://pedrum.shinyapps.io/mr_dataviz/</a>. Options include: detection and filtering of outliers, identification of clusters, and biological pathway overlays.</p>
+                    <h2>Background</h2>
+                    <p>The idea for this visualization tool came from a personal need. My <a href="#">Master's project involved creating a novel variation of an epidemiological method called "Mendelian randomization"</a>.</p>
+                    <h4>What is Mendelian randomization?</h4>
+                    <iframe align="center" width="560" height="315" src="https://www.youtube.com/embed/LoTgfGotaQ4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <blockquote>
+                      <p>Essentially, Mendelian randomization works similar to a randomized controlled trial (often used in the context of testing whether a drug causes a disease to be cured). In a randomized controlled trial, individuals are <strong>randomly allocated</strong> to an experimental/drug vs. placebo group. With a sufficiently large sample size, randomization ensures both groups are equal on average in terms of all factors. Therefore, any differences over the course of a trial must be caused by the one factor we have explicitly altered - allocation of the drug vs. placebo. By the same principle, Mendelian randomization is mother nature's RCT. At birth, we are all <strong>randomly</strong> allocated different versions of genes (alleles) that correspond to higher/lower levels of certain behavioural traits (e.g. smoking), molecular traits (e.g. cholesterol), etc. For instance, if we find an allele that increases levels of testosterone leads to higher rates of heart disease, then it suggests testosterone causes heart disease. In contrast, by simply comparing groups of individuals with high and low testosterone, you cannot draw the same conclusion of <strong>causality</strong>. It's possible heart disease causes higher testosterone (reverse causation), or some unmeasured third variable is responsible for both higher testosterone and higher rates of heart disease (confounding). For more information, please read this <a href="#">review paper</a>.</p>
+                    </blockquote>
+                    <p>Nevertheless, our variation of Mendelian randomization was called "reverse" Mendelian randomization. In traditional MR, we are often looking at molecular traits that cause disease. These are likely good targets for pharmaceutical companies to halt progression of a disease. However, there is also value in finding molecular traits that are themselves caused BY a disease. These would be good targets to diagnose and identify patients developing a disease. </p>
+                    <p>To perform this analysis, you need two sets of associations... </p>
+                    <p>Often the output of the datasets look like this...</p>
+                    <p>However, there are several steps that need to be taken for all of the analyses...</p>
+                    <ol>
+                      <li>There can be no outliers. This is checked by doing a leave-one-out analysis. But this can often take a long time, and it is helpful to see at-a-quick glance whether there are any SNPs having an abnormally large impact on the regression.</li>
+                      <li>Aliquam tincidunt mauris eu risus.</li>
+                      <li>Aliquam tincidunt mauris eu risus.</li>
+                    </ol>
                     <p class="mb-30">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
                       using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
                       sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
@@ -109,17 +136,15 @@
       <div class="socials-media text-center">
 
         <ul class="list-unstyled">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/pedrum-s"><i class="ion-social-linkedin"></i></a></li>
           <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+          <li><a href="https://github.com/pedrumstick"><i class="ion-social-github"></i></a></li>
+          <li><a href="mailto:pmohamma@uwo.ca"><i class="ion-email"></i></a></li>
         </ul>
 
       </div>
 
-      <p>&copy; Copyrights Pedrum Mohammadi-Shemirani. All rights reserved.</p>
+      <p>&copy; Copyright Pedrum Mohammadi-Shemirani. All rights reserved.</p>
 
       <div class="credits">
         <!--

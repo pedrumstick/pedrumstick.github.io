@@ -115,6 +115,9 @@
     padding-top: 15px;
     display: block;
   }
+  #header {
+    background: #ffffff;
+  }
   /* About */
   .head-info .header-content h1 {
     font-size: 32px;
@@ -234,7 +237,8 @@
 @media (max-width: 480px) {
   /* Navbar */
   nav {
-    padding: 20px 15px;
+    padding: 10px 15px;
+    background: #fff;
   }
   .nav-menu {
     margin-top: 40px;
@@ -304,7 +308,8 @@
 @media (max-width: 320px) {
   /* Navbar */
   nav {
-    padding: 20px 15px;
+    padding: 10px 15px;
+    background: #fff;
   }
   .nav-menu {
     margin-top: 40px;
